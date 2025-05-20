@@ -1,0 +1,18 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://app-fun-4640.my.salesforce.com" validUntil="2035-05-18T07:05:19.220Z">
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAZbsgseIAAAAAEZ7pCswDQYJKoZIhvcNAQELBQAwgZAx KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIwTWF5MjAyNV8wNzA1MTUxGDAWBgNV BAsMDzAwRFdkMDAwMDA1MjJYZDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew HhcNMjUwNTIwMDcwNTE1WhcNMjYwNTIwMDAwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs ZlNpZ25lZENlcnRfMjBNYXkyMDI1XzA3MDUxNTEYMBYGA1UECwwPMDBEV2QwMDAw MDUyMlhkMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN AQEBBQADggEPADCCAQoCggEBAL2dmjD0tfbR2H7VhARuZ3vcC2Jz3t72Qhrzf0BJ 8hL5XaCYUpoTbIbwyAJlte+b6A4fqPI/ZIHW4wqywVpJmpO7Hhtc0+deVMqnedMR 0pMxXPoHCtprX5/a4b8JuZt3YmBxDhbsIS9yApncxR3LiB7r4mmwv44THi6Dosjo X3XoW+U+wInK9r8dnGE/cqX6jLvSojZJ3RDKqTL/lEnL1xPM87eNfJxkB8iLVPlX 2Nosq+jOvm34vDPFso+Zrc2jjCBIzpA+hxlTCXlO/uCiAIbmz9Nu2g1mFjwF5M+f gklzepPS2R3HmlEX0uSbDo9lmp8V67Cme42AG6yK+W2gxbkCAwEAAaOCAQAwgf0w HQYDVR0OBBYEFFgafAO37BUs22duOdu5UGmD6xgtMA8GA1UdEwEB/wQFMAMBAf8w gcoGA1UdIwSBwjCBv4AUWBp8A7fsFSzbZ24527lQaYPrGC2hgZakgZMwgZAxKDAm BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIwTWF5MjAyNV8wNzA1MTUxGDAWBgNVBAsM DzAwRFdkMDAwMDA1MjJYZDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgGW 7ILHiAAAAABGe6QrMA0GCSqGSIb3DQEBCwUAA4IBAQBmPHDFeB9zYeTzNGdPenaP +KvbaxVzk/A4XNRCoE699acURk4kqcNLk/qoxu++1eLSUtmUiGL8bnDQIR+nD4Ng z5dEakXbv7LRggc3bKDluc/igQ56d4qrQhEmJMuKJbNPdy3cOojMT2GXmqOIksGw FGV333uUb2sg6c9U6ISvoTpymkVvjlcs+IVZMMaqHNEc+1TLiI/SPHSVdxCozEs1 gvCTFQMFKU34/JZr+z9rWN+O9QRv/2djIf9gaVPOzSdx/ErqVIUXw7Hy6wPSYXsA PXAS6duwmU75/MGEUCyUavPuLYneQjAWzVf1/0WhfS8YOmS0KeQvU9xXAgZoHLEK</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.salesforce.com/services/auth/sp/saml2/logout"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://app-fun-4640.my.salesforce.com/services/auth/sp/saml2/logout"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.site.com/mystorevforcesite/services/auth/sp/saml2/logout"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://app-fun-4640.my.site.com/mystorevforcesite/services/auth/sp/saml2/logout"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.salesforce.com" index="0" isDefault="true"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.site.com/mystorevforcesite/login" index="1"/>
+</md:SPSSODescriptor>
+</md:EntityDescriptor>
