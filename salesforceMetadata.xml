@@ -1,18 +1,27 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://app-fun-4640.my.salesforce.com" validUntil="2035-05-18T07:05:19.220Z">
-<md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-<md:KeyDescriptor use="signing">
-<ds:KeyInfo>
-<ds:X509Data>
-<ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAZbsgseIAAAAAEZ7pCswDQYJKoZIhvcNAQELBQAwgZAx KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIwTWF5MjAyNV8wNzA1MTUxGDAWBgNV BAsMDzAwRFdkMDAwMDA1MjJYZDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew HhcNMjUwNTIwMDcwNTE1WhcNMjYwNTIwMDAwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs ZlNpZ25lZENlcnRfMjBNYXkyMDI1XzA3MDUxNTEYMBYGA1UECwwPMDBEV2QwMDAw MDUyMlhkMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN AQEBBQADggEPADCCAQoCggEBAL2dmjD0tfbR2H7VhARuZ3vcC2Jz3t72Qhrzf0BJ 8hL5XaCYUpoTbIbwyAJlte+b6A4fqPI/ZIHW4wqywVpJmpO7Hhtc0+deVMqnedMR 0pMxXPoHCtprX5/a4b8JuZt3YmBxDhbsIS9yApncxR3LiB7r4mmwv44THi6Dosjo X3XoW+U+wInK9r8dnGE/cqX6jLvSojZJ3RDKqTL/lEnL1xPM87eNfJxkB8iLVPlX 2Nosq+jOvm34vDPFso+Zrc2jjCBIzpA+hxlTCXlO/uCiAIbmz9Nu2g1mFjwF5M+f gklzepPS2R3HmlEX0uSbDo9lmp8V67Cme42AG6yK+W2gxbkCAwEAAaOCAQAwgf0w HQYDVR0OBBYEFFgafAO37BUs22duOdu5UGmD6xgtMA8GA1UdEwEB/wQFMAMBAf8w gcoGA1UdIwSBwjCBv4AUWBp8A7fsFSzbZ24527lQaYPrGC2hgZakgZMwgZAxKDAm BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIwTWF5MjAyNV8wNzA1MTUxGDAWBgNVBAsM DzAwRFdkMDAwMDA1MjJYZDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgGW 7ILHiAAAAABGe6QrMA0GCSqGSIb3DQEBCwUAA4IBAQBmPHDFeB9zYeTzNGdPenaP +KvbaxVzk/A4XNRCoE699acURk4kqcNLk/qoxu++1eLSUtmUiGL8bnDQIR+nD4Ng z5dEakXbv7LRggc3bKDluc/igQ56d4qrQhEmJMuKJbNPdy3cOojMT2GXmqOIksGw FGV333uUb2sg6c9U6ISvoTpymkVvjlcs+IVZMMaqHNEc+1TLiI/SPHSVdxCozEs1 gvCTFQMFKU34/JZr+z9rWN+O9QRv/2djIf9gaVPOzSdx/ErqVIUXw7Hy6wPSYXsA PXAS6duwmU75/MGEUCyUavPuLYneQjAWzVf1/0WhfS8YOmS0KeQvU9xXAgZoHLEK</ds:X509Certificate>
-</ds:X509Data>
-</ds:KeyInfo>
-</md:KeyDescriptor>
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.salesforce.com/services/auth/sp/saml2/logout"/>
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://app-fun-4640.my.salesforce.com/services/auth/sp/saml2/logout"/>
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.site.com/mystorevforcesite/services/auth/sp/saml2/logout"/>
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://app-fun-4640.my.site.com/mystorevforcesite/services/auth/sp/saml2/logout"/>
-<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.salesforce.com" index="0" isDefault="true"/>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://app-fun-4640.my.site.com/mystorevforcesite/login" index="1"/>
-</md:SPSSODescriptor>
-</md:EntityDescriptor>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="CN=CyberArk:Customer:ABZ4429" validUntil="2027-09-21T11:08:04.529Z">
+<SPSSODescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="true">
+<KeyDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" use="signing">
+<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+<X509Data xmlns="http://www.w3.org/2000/09/xmldsig#">
+<X509Certificate xmlns="http://www.w3.org/2000/09/xmldsig#">MIIDkzCCAn2gAwIBAgIQCmu3w2o5YUaWTzCWpLPNJDALBgkqhkiG9w0BAQswJDEiMCAGA1UEAwwZQ3liZXJBcmsgQ3VzdG9tZXIgQUJaNDQyOTAeFw0yNTA3MjgxNTQzMzZaFw0zOTAxMDEwMDAwMDBaMDIxMDAuBgNVBAMMJ0FCWjQ0MjkgQXBwbGljYXRpb24gU2lnbmluZyBDZXJ0aWZpY2F0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALn+J8iHSQ016B84kyNCjsTzr8pcsAw7RCNX75As7e0QKJ+ZYvz7Kti1GyiWW2WtsEQ2tB5HP4GLZWsgQYJgMoWpV/pbm/lU8iR0Il+Hsl3/nYpcT4K2g7WNPbhI8vcKy3vw4sEyj6DvCDt36VPis9HwWP5xH9dwG0m74/wB+Kds896ruqr5zazQnfzrVDm14s/Y9xmI5c/2S72PRn3P2uCsrUTzKkpI1ZSmENifzt7+NmaOPseo32O9hJadAZBW8gsWwB/9G3yTizoXNYZPIGUgrdpXcghVGI0OCGFhsNPoqrl1TXYuvUh14eYbqYD3ktbS8ow3iABXU9QA0HhXfT8CAwEAAaOBtjCBszATBgorBgEEAYKmcAEJBAUMAzEuMDAXBgorBgEEAYKmcAEDBAkMB0FCWjQ0MjkwKwYDVR0jBCQwIoAgbzM96DXaRuhHaIqcm4M68bKbLizDS5E83VIMZrrAlcEwKQYDVR0OBCIEIHaf7WJzV8K5p6tMwnyLX13VJKAiUcDxo1exy5IDbFBkMA4GA1UdDwEB/wQEAwIFoDAbBgorBgEEAYKmcAEEBA0MC0FwcGxpY2F0aW9uMAsGCSqGSIb3DQEBCwOCAQEAhufbJFRIyAfaPVmzbBQnpgXo6P19bgsroBDdayoWafSfIQhAhSplUs1oQGdpk/lo9M/p/9X+yCjzi1OQkiTc9xUYg1i1I0+t7R/EtDnzOnrGXUElKYJhlHZo37AiCyCN4KxzY/IpoFw26iMpuVEMg/SY8qf8JsYCnlEPWFTl0cxQk1faNSZPavRkdrjjhy8qciRVVHdS1N3Zw4S41Cxt/7FafQdzqnx7pmIxVzQEmMyDZnvFycysmtuUy6ShpC4EAzBXZ1OikK9pLEw2BjN0aW/9oiwXYWADKDW15nB8wmesV7FGZw7hHwBgbNsv0/ikpHYj4dl0Imgzoeajo5w5TA==</X509Certificate>
+</X509Data>
+</KeyInfo>
+</KeyDescriptor>
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://abz4429.id.cyberark.cloud/Security/Logout"/>
+<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://abz4429.id.cyberark.cloud/my" index="1"/>
+<AttributeConsumingService index="1">
+<RequestedAttribute FriendlyName="MobileNumber" Name="MobileNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="Description" Name="Description" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="Group" Name="Group" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="DisplayName" Name="DisplayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="OfficeNumber" Name="OfficeNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="UserPrincipalName" Name="UserPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="Photo" Name="Photo" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="LoginName" Name="LoginName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="HomeNumber" Name="HomeNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="EmailAddress" Name="EmailAddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+<RequestedAttribute FriendlyName="Name" Name="Name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+</AttributeConsumingService>
+</SPSSODescriptor>
+</EntityDescriptor>
